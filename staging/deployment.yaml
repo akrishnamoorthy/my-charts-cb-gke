@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: accountsearch
+  name: accountsearch
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: accountsearch
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: accountsearch
+    spec:
+      containers:
+      - image: demo-app-image
+        name: gitop-search
+        resources: {}
