@@ -3,7 +3,7 @@ kind: Kustomization
 images:
 - name: demo-app-image
   newName: amritha1811/gitop-search
-  newTag: latest
+  newTag: v4
 resources:
 - deployment.yaml
 - service.yaml
